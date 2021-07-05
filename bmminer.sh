@@ -24,7 +24,7 @@ do_start() {
 	sleep 5s
 	killall -9 bmminer || true
 	echo "0" > /tmp/stoptrigger
-        /usr/bin/bmminer --fixed-freq --no-pre-heat --version-file /usr/bin/compile_time --api-listen --default-config /config/x/bmminer.conf &
+        /usr/bin/bmminer --fixed-freq --no-pre-heat --version-file /usr/bin/compile_time --api-listen --default-config /config/bmminer.conf &
 }
 
 do_stop() {
